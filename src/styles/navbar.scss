@@ -23,6 +23,7 @@ button {
   border: none;
   cursor: pointer;
   color: white;
+  background-color: $primary;
   font-weight: 500;
   display: flex;
   flex-direction: row;
@@ -106,6 +107,7 @@ a {
       flex-direction: column;
       align-items: flex-start;
       .login {
+
         padding: 16px 16px 16px 0;
 
         a {
@@ -150,11 +152,12 @@ a {
     display: block;
   }
 
+
   .hide-for-tablet {
     display: none;
   }
 
-  nav {
+  .desktop-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,9 +174,58 @@ a {
 
     .menu-cta {
       display: flex;
-      gap: 24px;
       align-items: center;
+      .links {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #D7DCE1;
+        a {
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a:last-child {
+          margin-right: 24px;
+        }
+      }
+      .cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        .login  {
+          padding: 16px 32px;
+        }
+        button {
+          width: 144px;
+          height: 40px;
+          border-radius: 32px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .desktop-menu {
+    .menu-cta {
+      .links {
+        gap: 40px;
+        a:last-child {
+          margin-right: 32px;
+        }
+        .cta {
+          gap: 8px;
+        }
+      }
     }
   }
 }

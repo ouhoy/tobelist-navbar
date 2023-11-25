@@ -30,7 +30,7 @@ function handleMenuClick() {
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="cta">
-          <div class="login"><a href="#">Log In →</a></div>
+          <div class="login"><a href="#">Login →</a></div>
           <button>Get started</button>
 
         </div>
@@ -46,10 +46,14 @@ function handleMenuClick() {
 
       <div class="menu-cta">
         <div class="links">
-
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Privacy</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
         </div>
         <div class="cta">
-          <div class="login"><a href="#">Log In</a></div>
+          <div class="login"><a href="#">Login</a></div>
           <button>Get started</button>
         </div>
       </div>
