@@ -1,0 +1,179 @@
+$dark: #252525;
+
+$primary: #195bff;
+$primary-hover: #1752E6;
+$primary-active: #1449CC;
+
+$main-transition: all .1s ease-in-out;
+
+
+$mobile-max: 95%;
+$md: 598px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: $main-transition;
+
+  &:hover {
+    background-color: $primary-hover !important;
+  }
+
+  &:active {
+    background-color: $primary-active !important;
+    transform: scale(0.98);
+  }
+
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: $mobile-max;
+  margin: 0 auto;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+.navbar {
+  margin-top: 16px;
+
+  a {
+    color: $dark;
+    font-weight: 500;
+  }
+
+  .mobile-menu {
+
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          font-size: 20px;
+          color: #313234;
+        }
+      }
+
+      p {
+        font-weight: 500;
+        line-height: 16px;
+      }
+    }
+
+    .links {
+      margin-top: 32px;
+      li {
+        list-style: none;
+        padding: 16px 16px 16px 0;
+        border-bottom: 1px solid #DBDBDB;
+      }
+    }
+
+    .cta {
+      margin-top: 8px;
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      .login {
+        padding: 16px 16px 16px 0;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 48px;
+        padding: 16px 32px;
+        border-radius: 32px;
+        font-size: 16px;
+        background-color: $primary;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .hide-for-mobile {
+    display: block;
+  }
+
+  .hide-for-md {
+    display: none;
+  }
+
+  .mobile-menu {
+    .cta {
+      button {
+        max-width: 280px;
+      }
+    }
+  ;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .hide-for-mobile {
+    display: block;
+  }
+
+  .hide-for-tablet {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 20px;
+        color: #313234;
+      }
+    }
+
+    .menu-cta {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+    }
+  }
+}
