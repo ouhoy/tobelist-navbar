@@ -18,10 +18,9 @@ function handleMenuClick() {
           <img src="src/assets/images/logo.svg" alt="tobelist.net logo">
           <h2 class="hide-for-mobile">tobelist.net</h2>
         </div>
-
-        <p @click="handleMenuClick">{{menu? "Close": "Menu"}}</p>
+        <button @click="handleMenuClick" class="menu-toggle">{{menu? "Close": "Menu"}}</button>
       </div>
-      <div v-if="menu">
+      <div class="menu-cta" v-if="menu">
         <ul class="links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -31,7 +30,7 @@ function handleMenuClick() {
         </ul>
         <div class="cta">
           <div class="login"><a href="#">Login →</a></div>
-          <button>Get started</button>
+          <button class="primary-btn">Get started</button>
 
         </div>
       </div>
@@ -54,7 +53,7 @@ function handleMenuClick() {
         </div>
         <div class="cta">
           <div class="login"><a href="#">Login</a></div>
-          <button>Get started</button>
+          <button class="primary-btn">Get started</button>
         </div>
       </div>
     </nav>

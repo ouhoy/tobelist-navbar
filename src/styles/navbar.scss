@@ -18,13 +18,18 @@ $md: 598px;
 }
 
 button {
-
+  font-family: "Inter", sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
+
+
+}
+
+.primary-btn {
   color: white;
   background-color: $primary;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,7 +44,6 @@ button {
     background-color: $primary-active !important;
     transform: scale(0.98);
   }
-
 }
 
 body {
@@ -54,6 +58,10 @@ a {
 .container {
   max-width: $mobile-max;
   margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 .hide-for-mobile {
@@ -74,57 +82,78 @@ a {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .logo {
         display: flex;
         gap: 8px;
         align-items: center;
         justify-content: center;
+
         h2 {
           font-size: 20px;
           color: #313234;
         }
       }
 
-      p {
+      .menu-toggle {
+        font-size: 16px;
         font-weight: 500;
         line-height: 16px;
+        color: $dark;
+        background: none;
+        border-radius: 32px;
+        border: 2px solid;
+        padding: 8px 16px;
+
+        &:hover, &:active {
+          background: none;
+
+        }
       }
     }
 
-    .links {
+    .menu-cta {
       margin-top: 32px;
-      li {
-        list-style: none;
-        padding: 16px 16px 16px 0;
-        border-bottom: 1px solid #DBDBDB;
-      }
-    }
 
-    .cta {
-      margin-top: 8px;
-      display: flex;
-      gap: 24px;
-      flex-direction: column;
-      align-items: flex-start;
-      .login {
+      height: 100vh;
 
-        padding: 16px 16px 16px 0;
+      .links {
 
-        a {
-          text-decoration: underline;
+        li {
+          list-style: none;
+          padding: 16px 16px 16px 0;
+          border-bottom: 1px solid #DBDBDB;
         }
       }
 
-      button {
-        width: 100%;
-        height: 48px;
-        padding: 16px 32px;
-        border-radius: 32px;
-        font-size: 16px;
-        background-color: $primary;
-      }
+      .cta {
+        margin-top: 8px;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        align-items: flex-start;
 
+        .login {
+
+          padding: 16px 16px 16px 0;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 48px;
+          padding: 16px 32px;
+          border-radius: 32px;
+          font-size: 16px;
+          background-color: $primary;
+        }
+
+      }
     }
+
   }
 }
 
@@ -161,11 +190,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .logo {
       display: flex;
       gap: 8px;
       align-items: center;
       justify-content: center;
+
       h2 {
         font-size: 20px;
         color: #313234;
@@ -175,30 +206,35 @@ a {
     .menu-cta {
       display: flex;
       align-items: center;
+
       .links {
         display: flex;
         gap: 24px;
         align-items: center;
         justify-content: center;
         border-right: 1px solid #D7DCE1;
+
         a {
           height: 32px;
           display: flex;
           justify-content: center;
           align-items: center;
         }
+
         a:last-child {
           margin-right: 24px;
         }
       }
+
       .cta {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .login  {
+        .login {
           padding: 16px 32px;
         }
+
         button {
           width: 144px;
           height: 40px;
@@ -219,9 +255,11 @@ a {
     .menu-cta {
       .links {
         gap: 40px;
+
         a:last-child {
           margin-right: 32px;
         }
+
         .cta {
           gap: 8px;
         }
