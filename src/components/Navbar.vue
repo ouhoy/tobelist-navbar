@@ -5,6 +5,12 @@ const menu = ref(false);
 
 function handleMenuClick() {
   menu.value = !menu.value;
+
+  // Hide scrollbar
+  const body = document.getElementsByTagName("body")[0];
+  body.classList.toggle("no-overflow");
+
+
 }
 
 
