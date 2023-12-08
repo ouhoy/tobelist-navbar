@@ -164,6 +164,8 @@ a {
   }
 }
 
+
+//TODO Hide for mobile tablet and desktop here should be moved to the main file
 @media only screen and (min-width: 630px) {
   .hide-for-mobile {
     display: block;

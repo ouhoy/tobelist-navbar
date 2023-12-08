@@ -1,0 +1,44 @@
+header {
+  img {
+    width: 100%;
+  }
+  .header-titles {
+    width: 369px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+
+    h1 {
+      color: #151617;
+      text-align: center;
+      font-size: 39px;
+      font-weight: 500;
+      line-height: 48px;
+    }
+
+    .primary-btn {
+      width: 100%;
+      border-radius: 25px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.56px;
+      height: 48px;
+      padding: 24px 48px;
+    }
+    p {
+      color:  #313234;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+}
