@@ -22,7 +22,7 @@ function handleMenuClick() {
       <div class="nav-top">
         <div class="logo">
           <img src="src/assets/images/logo.svg" alt="tobelist.net logo">
-          <h2 class="hide-for-mobile">tobelist.net</h2>
+          <h2 class="">tobelist.net</h2>
         </div>
         <button @click="handleMenuClick" class="menu-toggle">{{menu? "Close": "Menu"}}</button>
       </div>

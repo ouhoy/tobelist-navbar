@@ -8,7 +8,7 @@
       <img src="src/assets/images/tobelist friend.svg" alt="tobelist friend" srcset="">
       <div>
         <div class="header-titles">
-          <h1>Forget your todolist<br>Create your tobelist</h1>
+          <h1>Forget your Todolist<br>Create your Tobelist</h1>
           <button class="primary-btn ">Create my tobelist -free</button>
           <p>Tobelist is for boosting productivity. Unlike many other tools out there, this one can incorporate many
             multiple methods.</p>
