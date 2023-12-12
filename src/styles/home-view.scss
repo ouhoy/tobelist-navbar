@@ -22,11 +22,11 @@ header {
 
 
     h1 {
+      font-size: 37px;
+      line-height: 48px;
+      font-weight: 600;
       color: #252525;
       text-align: center;
-      font-size: 38px;
-      font-weight: 500;
-      line-height: 48px;
     }
 
     .primary-btn {
@@ -38,13 +38,12 @@ header {
       font-weight: 500;
       line-height: normal;
       letter-spacing: -0.56px;
-      height: 48px;
-      padding: 24px 48px;
+      height: 56px;
     }
     p {
       color:  #313234;
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: 24px;
@@ -54,7 +53,7 @@ header {
   .numbers {
     width: 100%;
     max-width: 369px;
-
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +66,7 @@ header {
       justify-content: center;
 
       h2 {
-        color: #252525;
+        color: #272727;
         text-align: center;
         font-size: 31px;
         font-style: normal;
@@ -88,7 +87,11 @@ header {
   }
 
 }
-
+main {
+  .explore {
+    background: linear-gradient(-45deg,rgb(228,239,255),#F4F5F6,rgba(225,240,255,.67),rgb(229,241,255));
+  }
+}
 
 @media only screen and (min-width: 630px) {
   header {
@@ -100,15 +103,24 @@ header {
         text-align: left;
         font-weight: 600;
       }
+      p {
+        font-size: 16px;
+      }
       .primary-btn {
         font-size: 18px;
         font-family: "Inter", sans-serif;
         font-weight: 400;
-        width: 344px;
+        width: 400px;
         height: 56px;
       }
     .number-container {
       max-width: 448px;
+      h2 {
+        font-size: 32px;
+        line-height: 32px;
+        color: #252525;
+
+      }
     }
     }
   }
@@ -120,14 +132,19 @@ header {
   margin-top: 64px;
   flex-direction: row;
   justify-content: space-between;
-  img {
+  .img-container {
     order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
   .header-titles {
     order: 1;
     max-width: 600px;
     align-items: flex-start;
-
+    h1 {
+      min-width: 480px;
+    }
 
     p {
       order: 1;
@@ -136,9 +153,11 @@ header {
     }
     .primary-btn {
       order: 2;
+      width: 344px;
 
 
     }
+
     .numbers {
       margin-top: 8px;
       order: 3;
@@ -152,9 +171,11 @@ header {
 header {
   .header-titles {
     h1 {
+      width: 552px;
       font-size: 56px;
       line-height: 64px;
     }
+
   }
 }
 }
