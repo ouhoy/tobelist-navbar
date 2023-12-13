@@ -24,7 +24,8 @@ function handleMenuClick() {
           <img src="src/assets/images/logo.svg" alt="tobelist.net logo">
           <h2 class="">tobelist.net</h2>
         </div>
-        <button @click="handleMenuClick" class="menu-toggle">{{menu? "Close": "Menu"}}</button>
+
+                <button @click="handleMenuClick" class="menu-toggle">{{menu? "Close": "Menu"}}</button>
       </div>
       <div class="menu-cta" v-if="menu">
         <ul class="links">

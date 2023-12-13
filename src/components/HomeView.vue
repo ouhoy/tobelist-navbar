@@ -5,10 +5,10 @@
 <template>
   <div class="container">
     <header>
-    <div class="img-container">
-      <img src="src/assets/images/tobelist friend.svg" alt="tobelist friend" srcset="">
+      <div class="img-container">
+        <img src="src/assets/images/tobelist friend.svg" alt="tobelist friend" srcset="">
 
-    </div>
+      </div>
       <div>
         <div class="header-titles">
           <h1>Forget your Todolist<br>Create your Tobelist</h1>
@@ -37,8 +37,11 @@
   </div>
   <main>
     <section class="explore">
-
-      
+     <div class="explore-title">
+       <h2>Make your life more efficient</h2>
+       <p>Unlike many other tools out there, this one can incorporate multiple methods.</p>
+     </div>
+      <img src="src/assets/images/tobelist-mobile-view.svg" alt="tobelist mobile app view" srcset="">
     </section>
   </main>
 </template>

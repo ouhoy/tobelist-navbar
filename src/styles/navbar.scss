@@ -109,6 +109,19 @@ a {
         border: 2px solid #252525;
         padding: 8px 16px;
 
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+          justify-content: center;
+          .line {
+            width: 24px;
+            height: 3px !important;
+            background-color: black;
+          }
+        }
+
         &:hover, &:active {
           background: none;
 
