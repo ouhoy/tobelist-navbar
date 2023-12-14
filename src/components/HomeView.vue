@@ -37,11 +37,18 @@
   </div>
   <main>
     <section class="explore">
-     <div class="explore-title">
-       <h2>Make your life more efficient</h2>
-       <p>Unlike many other tools out there, this one can incorporate multiple methods.</p>
-     </div>
-      <img src="src/assets/images/tobelist-mobile-view.svg" alt="tobelist mobile app view" srcset="">
+
+      <div class="explore-content">
+        <div class="explore-title">
+          <h2>Make your life more efficient</h2>
+          <p class="hide-for-tablet">Unlike many other
+            tools out there, this one can incorporate multiple methods.</p>
+          <p class="hide-for-mobile">Tobelist is the ultimate form of boosting productivity. Unlike many other
+            tools out there, this one can incorporate multiple methods.</p>
+        </div>
+        <img class="" src="src/assets/images/tobelist-desktop-view.svg" alt="tobelist mobile app view" srcset="">
+      </div>
+
     </section>
   </main>
 </template>

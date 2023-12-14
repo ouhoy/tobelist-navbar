@@ -92,40 +92,53 @@ header {
 main {
   .explore {
     margin-top: 64px;
-    padding-top: 24px;
+    padding-top: 32px;
     background: linear-gradient(-45deg,rgb(228,239,255),#F4F5F6,rgba(225,240,255,.67),rgb(229,241,255));
 
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
 
 
-    .explore-title {
-      width: 95%;
+    .explore-content{
+
+      max-width: 95%;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 32px;
       align-items: center;
       justify-content: center;
-      h2 {
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: 600;
-        text-align: center;
+
+
+
+      .explore-title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          text-align: center;
+
+        }
+
+        p {
+          color: #313234;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          font-weight: 500;
+        }
+
 
       }
 
-      p {
-        max-width: 304px;
-        color: #313234;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
+      img {
+        width: 100%;
       }
     }
+
   }
 }
 
@@ -164,12 +177,33 @@ main {
     }
     }
   }
+
+  main {
+    .explore {
+      padding-top: 40px;
+
+      .explore-content {
+        gap: 40px;
+
+        .explore-title {
+          h2 {
+            font-size: 40px;
+            line-height: 40px;
+          }
+
+          p {
+              max-width: 616px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 960px) {
 
 header {
-  margin-top: 64px;
+  margin-top: 72px;
   flex-direction: row;
   justify-content: space-between;
   .img-container {
@@ -204,7 +238,18 @@ header {
     }
   }
 }
+main {
+  .explore {
+    margin-top: 88px;
+    padding-top: 48px;
 
+    .explore-content {
+      .explore-title {
+        gap: 16px;
+      }
+    }
+  }
+}
 }
 
 @media only screen and (min-width: 1290px) {
@@ -218,4 +263,24 @@ header {
 
   }
 }
+
+  main {
+    .explore {
+      margin-top: 96px;
+      padding-top: 64px;
+      .explore-content {
+        .explore-title {
+          gap: 24px;
+          h2 {
+            font-size: 48px;
+            line-height: 48px;
+          }
+        }
+
+        img {
+          max-width: 1440px;
+        }
+      }
+    }
+  }
 }
